@@ -46,6 +46,8 @@ public class itung implements Interpes {
         int nisn = SC.nextInt(); //Menggunakan scanner karena inputan bisa berupa angka
         System.out.println("Masukkan asal sekolah: ");
         String sekolah = con.readLine(); //Menggunakan console input agar bisa input nama panjang
+        System.out.println("Masukkan jurusan: ");
+        String jurusan = SC.next();
         System.out.println("");
 
         //Menampilkan output dari method2
@@ -53,5 +55,27 @@ public class itung implements Interpes {
         System.out.println("Nama: "+nama);
         System.out.println("NISN: "+nisn);
         System.out.println("Asal sekolah: "+sekolah);
+        System.out.println("Jurusan: "+jurusan);
+    }
+
+    @Override
+    public double berat(){
+        System.out.println("Masukkan berat badan orang pertama: ");
+        double berat1 = SC.nextDouble();
+        System.out.println("Masukkan berat badan orang kedua: "); 
+        double berat2 = SC.nextDouble();
+        System.out.println("Masukkan berat badan orang ketiga: ");
+        double berat3 = SC.nextDouble();
+        System.out.println("Masukkan berat badan orang keempat: ");
+        double berat4 = SC.nextDouble();
+        System.out.println("\n");
+        System.out.println("Berat orang pertama: "+berat1);
+        System.out.println("Berat orang kedua: "+berat2);
+        System.out.println("Berat orang ketiga: "+berat3);
+        System.out.println("Berat orang keempat: "+berat4);   
+        double ratarata;
+        ratarata = ((berat1 +berat2 + berat3 +berat4) / 4); 
+        System.out.println("Rata rata berat badan: "+ratarata);
+        return 0;
     }
 }

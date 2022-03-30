@@ -7,5 +7,6 @@ public class Relation {
         itung obj = new itung(); 
         obj.method1();
         obj.method2();
+        obj.berat();
     }
 }
