@@ -21,7 +21,7 @@ public class itung implements Interpes {
         int tambah = angka1 + angka2;
         int kurang = angka1 - angka2;
         int kali = angka1 * angka2;
-        double bagi = angka1 / angka2;
+        double bagi = angka1 / angka2; //Menggunakan double karena bisa saja hasil bagi ada koma
         int modulus = angka1 % angka2;
         System.out.println("");
         System.out.println("Hasil penjumlahan: "+tambah);
@@ -33,14 +33,18 @@ public class itung implements Interpes {
 
     @Override
     public void method2() {
+
+        //Deklarasi input untuk menentukan isi variabel
         System.out.println("");
         System.out.println("Masukkan nama anda: ");
         String nama =con.readLine(); //Menggunakan console input agar bisa input nama panjang
         System.out.println("Masukkan NISN: ");
-        int nisn = SC.nextInt();
+        int nisn = SC.nextInt(); //Menggunakan scanner karena inputan bisa berupa angka
         System.out.println("Masukkan asal sekolah: ");
         String sekolah = con.readLine(); //Menggunakan console input agar bisa input nama panjang
         System.out.println("");
+
+        //Menampilkan output dari method2
         System.out.println("Data anda: ");
         System.out.println("Nama: "+nama);
         System.out.println("NISN: "+nisn);

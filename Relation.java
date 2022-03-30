@@ -6,6 +6,6 @@ public class Relation {
     public static void main(String[] args) { 
         itung obj = new itung(); //Deklarasi objek baru bernama obj
         obj.method1(); //Memanggil method1 yang ada di class interfes tetapi methodnya memiliki isi di class Relation
-        obj.method2();
+        obj.method2(); //Memanggil method2 yang ada di class interfes tetapi methodnya memiliki isi di class Relation
     }
 }
