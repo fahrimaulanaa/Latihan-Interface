@@ -1,6 +1,15 @@
+//Import module JAVA
 import java.util.Scanner;
-public class itung implements Interpes{
+import java.io.Console;
+
+
+public class itung implements Interpes {
+
+    //Deklarasi scanner input
     static Scanner SC = new Scanner(System.in);
+
+    //Deklarasi console untuk input menggantikan scanner
+    Console con = System.console();
 
     public void method1(){ //Mengisi method1 yang ada di class Interpes
         System.out.println("Masukkan angka pertama: ");
@@ -24,7 +33,17 @@ public class itung implements Interpes{
 
     @Override
     public void method2() {
-        // TODO Auto-generated method stub
-        
+        System.out.println("");
+        System.out.println("Masukkan nama anda: ");
+        String nama =con.readLine(); //Menggunakan console input agar bisa input nama panjang
+        System.out.println("Masukkan NISN: ");
+        int nisn = SC.nextInt();
+        System.out.println("Masukkan asal sekolah: ");
+        String sekolah = con.readLine(); //Menggunakan console input agar bisa input nama panjang
+        System.out.println("");
+        System.out.println("Data anda: ");
+        System.out.println("Nama: "+nama);
+        System.out.println("NISN: "+nisn);
+        System.out.println("Asal sekolah: "+sekolah);
     }
 }
