@@ -1,4 +1,4 @@
-//Import module JAVA
+//Import module 
 import java.util.Scanner;
 import java.io.Console;
 
@@ -11,7 +11,9 @@ public class itung implements Interpes {
     //Deklarasi console untuk input menggantikan scanner
     Console con = System.console();
 
-    public void method1(){ //Mengisi method1 yang ada di class Interpes
+    public void method1(){ 
+        
+        //Mengisi method1 yang ada di class Interpes
         System.out.println("Masukkan angka pertama: ");
         int angka1 = SC.nextInt();
         System.out.println("Masukkan angka kedua: ");
@@ -24,6 +26,8 @@ public class itung implements Interpes {
         double bagi = angka1 / angka2; //Menggunakan double karena bisa saja hasil bagi ada koma
         int modulus = angka1 % angka2;
         System.out.println("");
+
+        //Menampilkan hasil dari operasi aritmatika diatas
         System.out.println("Hasil penjumlahan: "+tambah);
         System.out.println("Hasil pengurangan: "+kurang);
         System.out.println("Hasil perkalian: "+kali);
