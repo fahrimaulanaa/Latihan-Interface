@@ -60,6 +60,8 @@ public class itung implements Interpes {
 
     @Override
     public double berat(){
+
+        //Menentukan input
         System.out.println("Masukkan berat badan orang pertama: ");
         double berat1 = SC.nextDouble();
         System.out.println("Masukkan berat badan orang kedua: "); 
@@ -69,6 +71,8 @@ public class itung implements Interpes {
         System.out.println("Masukkan berat badan orang keempat: ");
         double berat4 = SC.nextDouble();
         System.out.println("\n");
+
+        //Menampilkan output
         System.out.println("Berat orang pertama: "+berat1);
         System.out.println("Berat orang kedua: "+berat2);
         System.out.println("Berat orang ketiga: "+berat3);
