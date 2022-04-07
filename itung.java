@@ -55,7 +55,7 @@ public class itung implements Interpes {
         System.out.println("Nama: "+nama);
         System.out.println("NISN: "+nisn);
         System.out.println("Asal sekolah: "+sekolah);
-        System.out.println("Jurusan: "+jurusan);
+        System.out.println("Jurusan: "+jurusan + "\n");
     }
 
     @Override
